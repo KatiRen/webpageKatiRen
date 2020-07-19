@@ -107,9 +107,9 @@ margin-top: 18px;
 
 
 .profilePic{
- float:right;
  height:310px;
  width:310px;
+ width: 40%
 
 }
 .profileDetails {
@@ -123,18 +123,26 @@ margin-top: 18px;
   margin-bottom: 40px;
 }
 
+main section1 {
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
 main section1 img{
     border-radius: 30px;
     border: 3px solid #A7734C;
     padding: 0px;
+    float: right;
   }
 
-  main section1 {
-    margin-top: 20px;
 
-    padding-top: 15px;
+  main section2 h3{  /*heading art gallary*/
+    font-family: 'Spectral SC', serif, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding-top: 5px;
   }
-
 
  h2{
    font-family: 'Spectral SC', serif, sans-serif;
@@ -151,17 +159,11 @@ main {
     text-align: center;
   }
 
+
 main img{
   max-width: 100%;
 }
 
-h3{  /*heading art gallary*/
-  font-family: 'Spectral SC', serif, sans-serif;
-  text-align: center;
-  font-size: 50px;
-  margin-bottom: 20px;
-  padding-top: 5px;
-}
 
 p1{
 padding: 0px;
