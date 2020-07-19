@@ -101,16 +101,14 @@ margin-top: 18px;
  width:100%;
  height:auto;
 }
-<div id="links">
+
 
 
 
 
 .profilePic{
- float:right;
  height:310px;
  width:310px;
-
 }
 .profileDetails {
   float: left;
@@ -119,22 +117,28 @@ margin-top: 18px;
   max-width: 100%;
   height:auto;
   font-size: 20px;
-  padding-right: 15px;
+  padding-right: 30px;
   margin-bottom: 40px;
 }
+
+
 
 main section1 img{
     border-radius: 30px;
     border: 3px solid #A7734C;
     padding: 0px;
-  }
-
-  main section1 {
+    float: right;
     margin-top: 20px;
-
-    padding-top: 15px;
   }
 
+
+  main section2 h3{  /*heading art gallary*/
+    font-family: 'Spectral SC', serif, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+  }
 
  h2{
    font-family: 'Spectral SC', serif, sans-serif;
@@ -151,17 +155,11 @@ main {
     text-align: center;
   }
 
-main img{
+
+main section2 img{
   max-width: 100%;
 }
 
-h3{  /*heading art gallary*/
-  font-family: 'Spectral SC', serif, sans-serif;
-  text-align: center;
-  font-size: 50px;
-  margin-bottom: 20px;
-  padding-top: 5px;
-}
 
 p1{
 padding: 0px;
@@ -349,13 +347,23 @@ opacity: 0.5;
 }
 */
 
+/*
+@media (max-width: 900px) {
+   .profilePic{
+     text-align: center;
+     float: none;
+   }
+   .profileDetails{
+     text-align: center;
+     float: none;
+   }
+} */
+
 
 @media (max-width: 700px) {
     #container {
       width: 90%;
     }
-
-
 
     .profilePic{
      text-align: center;
@@ -388,6 +396,10 @@ opacity: 0.5;
 
       img.cssbox_thumb {
       height: 100px;
+      }
+
+      footer {
+
       }
 
   /*  .navbar {
