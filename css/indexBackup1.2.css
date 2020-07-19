@@ -1,0 +1,114 @@
+#container {
+  width: 80%;
+  margin: auto;
+}
+/*dunno if i should kep it? have more of it on the bottom*/
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  padding: 0 20px;
+}
+
+h1{
+  background-color: white;
+  opacity: 0.5;
+}
+/*this one shows off not how I want it to be*/
+
+h1, h3{
+  font-family: 'Spectral SC', serif;
+  text-align: center;
+  font-size: 65px;
+ }
+
+
+
+ h2{
+   font-family: 'Spectral SC', serif;
+   font-size: 30px;
+   margin: 40px 0 10px;
+  }
+
+header img{
+    border-radius: 25px;
+    border: 5px solid #A7734C;
+  }
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+main img{
+  max-width: 100%;
+}
+
+p1{
+padding: 0px;
+}
+
+main section3 {
+  text-align: left;
+margin: 20px;
+}
+
+.iconDetails {
+margin-left:2%;
+float:left;
+height:80px;
+width:80px;
+}
+
+.container2 {
+ width:100%;
+ height:auto;
+ padding:20px;
+}
+
+
+
+/*not here but maybe for links*/
+h4 {
+   margin:0px;
+}
+
+main a:hover{
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+
+
+footer{
+  max-width: 1920px;
+  text-align: center;
+  margin: 5px 20px 20px 100px;
+}
+
+p.caption{
+  color: #A7734C;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+
+p5{
+  font-size: 15px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+footer:p5{
+  text-align: center;
+}
+/*this doesnt work*/
+
+
+  @media only screen and (max-width: 800px) {
+    #container {
+      width: 90%;
+    }

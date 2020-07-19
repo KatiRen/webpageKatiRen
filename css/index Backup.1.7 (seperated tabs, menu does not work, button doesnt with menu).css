@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+}
+/*dunno if i should keep it? have more of it on the bottom*/
+
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  padding-bottom: 70.4px;
+  min-height: 100vh;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 130px;
+}
+
+.navbar {
+  font-family: 'Spectral SC', serif, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  height: 130px;
+  width: 100%;
+  margin: 0px;
+  opacity: 1;
+  padding: 38px;
+  z-index: 10;
+/*  position: fixed;  */
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+ .navbar a.navbar-brand {
+  font-family: 'Spectral SC', serif;
+  text-align: center;
+  font-size: 55px;
+  font-weight: bold;
+  color: black;
+  height: inherit;
+  line-height: inherit;
+ }
+.navbar ul {
+  list-style: none;
+  text-align: center;
+  padding: 14px;
+}
+.navbar ul li {
+  display: inline-block;
+}
+.navbar ul li a {
+  display: block;
+  text-align: center;
+  min-width: 100px;
+  color: #A56E44;
+}
+.navbar ul li a:hover {
+  background-color: #B3DBCE;
+}
+.navbar .navbar-toggler {
+  display: none;
+}
+
+
+
+/*this one shows off not how I want it to be*/
+
+p2 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+h3{
+  font-family: 'Spectral SC', serif, sans-serif;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 28px;
+  padding-top: 15px;
+ }
+
+
+.profileDetails{
+ float:right;
+ height:310px;
+ width:310px;
+}
+
+.container3 {
+  width:100%;
+  height:auto;
+}
+
+
+/* might be of cecause it needs entire line? so stuff dont fit?*/
+ h2{
+   font-family: 'Spectral SC', serif, sans-serif;
+   font-size: 30px;
+   margin: 40px 0 10px;
+  }
+
+main section1 img{
+    border-radius: 30px;
+    border: 3px solid #A7734C;
+    padding: 0px;
+  }
+
+  main section1 {
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+  }
+
+main img{
+  max-width: 100%;
+}
+
+p1{
+padding: 0px;
+}
+
+main section2 {
+
+}
+
+main section3 {
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.iconDetails {
+float:left;
+height:80px;
+width:80px;
+margin-bottom: 30px;
+}
+
+.container2 {
+ width:100%;
+ height:auto;
+}
+
+
+
+/*not here but maybe for links*/
+h4 {
+   margin:0px;
+}
+
+main a:hover{
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0px;
+  background-color: white;
+  padding: 4px;
+  position: absolute;
+  bottom: 0;
+}
+
+p5{
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+p.caption{
+  color: #A7734C;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+/*this one is also ok ( only 66% approved, but js is better and it works)
+html {
+  scroll-behavior: smooth;
+}
+*/
+
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 58px;
+  right: 40px;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+/*i dont think this one works*/
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+color: white;
+opacity: 0.5;
+}
+
+/*animations*/
+.btnEntrance {
+   animation-duration: 0.5s;
+   animation-fill-mode: both;
+   animation-name: btnEntrance;
+}
+/*fadeInUp*/
+@keyframes btnEntrance {
+   from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+   }
+   to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+   }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+/* fadeOutDown */
+@keyframes btnExit {
+  from {
+     opacity: 1;
+  }
+  to {
+     opacity: 0;
+     transform: translate3d(0, 100%, 0);
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar ul {
+    padding: 0 10px;
+  }
+  .navbar ul li a {
+    min-width: 100px;
+    padding: 0 20px;
+  }
+}
+
+
+@media (max-width: 700px) {
+    #container {
+      width: 90%;
+    }
+    .navbar {
+      padding: 49px;
+    }
+
+    .navbar a.navbar-brand {
+
+    }
+
+    .navbar ul {
+      width: 100%;
+      padding: 0;
+      margin-top: 10px;
+      background-color: #F1CCB4;
+  /*   height: auto;   */
+      height: 100vh;
+      /**/    max-height: 0;  /* add later again */
+      overflow: hidden;
+      transition: all ease-in-out 0.3s;
+    }
+    .navbar ul.open {
+      max-height: 100vh;
+    }
+    .navbar ul li {
+      margin-top: 10px;
+      width: 100%;
+  /*    border-bottom: 1px solid green;  */
+    }
+    .navbar ul li a {
+      padding: 0;
+    }
+    .navbar .navbar-toggler {
+      display: block;
+      position: absolute;
+      height: 40px;
+      top: 45px;
+      right: 20px;
+      background-color: red;
+      color: violet;
+      border: 3px solid #A56E44;
+      border-radius: 5px;
+/*       border: none;    */
+      outline: none;
+      padding: 0 5px;
+      cursor: pointer;
+    }
+    .navbar .navbar-toggler span,
+    .navbar .navbar-toggler span::before,
+    .navbar .navbar-toggler span::after {
+      display: block;
+      content: '';
+      background-color: #A56E44;
+      height: 3px;
+      width: 28px;
+      border-radius: 4px;
+      transition: all ease-in-out 0.3s;
+    }
+    .navbar .navbar-toggler span::before {
+      transform: translateY(-8px);
+    }
+    .navbar .navbar-toggler span::after {
+      transform: translateY(5px);
+    }
+
+    .navbar .navbar-toggler.open-navbar-toggler span {
+/*      transform: rotate(90deg);*/
+      background-color: transparent;
+    }
+    .navbar .navbar-toggler.open-navbar-toggler span::before {
+      transform: translateY(0px) rotate(45deg);
+    }
+    .navbar .navbar-toggler.open-navbar-toggler span::after {
+      transform: translateY(-3px) rotate(-45deg);
+    }
+}

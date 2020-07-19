@@ -1,0 +1,415 @@
+title element into head element -> changing the name of our index.html
+<!DOCTYPE html>    (tell browser which type of document this is)
+
+<html>
+<head>
+  <title>Kati Ren</title>
+</head>
+
+<body>
+</body>
+--> basic structure
+-> head element stores invisible elements of page
+-> body elemstores all visible elements of page
+
+
+<h7>
+ I am a Headline
+</h7>   
+
+<p7> 
+  I am a paragraph.
+</p7>
+  
+making a link:
+a href is for links
+in > ... < you write the link display name
+<a href="https://www.instagram.com/katirenart/" target="_blank" >@KatiRenArt</a>
+target="_blank"   opens link in new tab if =_blank. 
+
+example: 
+
+<h7>
+  Headline
+</h7>   
+<p7>
+Instagram: <a href="https://www.instagram.com/katirenart/" target="_blank" title="Let's go to insta!">@KatiRenArt</a
+</p7> 
+Title shows a description of the link you hover over with your mouse.
+
+
+bold element tag: makes letters fat:
+<b>Contact</b> 
+
+itallic element tag: makes letters slanted:
+<i>Contact</i> 
+
+Images:    (no closing tag here!) 
+Always have the exact same name and file save points. Also, add the correct file type
+<img src="">
+example:
+<img src="img/art/digiIcon1Guitar.png">
+also possible to add a pic from internet by copying the super long url (no file type needed here)
+
+Line Break Element:   (no closing tag!) 
+<br>
+
+
+CSS - "the look", "style an eliment with as much stuff as we like"
+name:value; 
+example: 
+font-size: 42px;
+color: red;
+width: 400px;
+height: 600px;
+
+2 methods: 
+inline styles: 
+<div style="
+  color: red;
+  width: 400px;
+">
+
+rule sets:
+div{
+  color: red;
+  width: 400px;
+}
+
+
+two ways to add color: 
+https://htmlcolorcodes.com/
+warm middle brown: #BC7A5D
+https://htmlcolorcodes.com/color-names/
+pale green: honeydew
+
+<body>
+<h1 style="font-size: 30px; color: #BC7A5D;">Kati Ren 1</h1>
+<h1 style="font-size: 30px; color: honeydew;">Kati Ren 1</h1>
+make sure the <> are right! 
+
+copy & paste style atributes to all headings if you want them to be the same 
+but this is messy, so change to
+
+rule set styling:
+  <title>style tests</title>
+  <style type="text/css">
+    h2{
+       font-size: 30px;
+       color: salmon;
+    }
+  </style> 
+
+the more specific stype will dominate in case one thing has two descriptions
+two dominant styles: the last one written down takes domination
+
+class attribute to make one of the ones in group unique:
+1. write class where different stype needed: 
+<h2 class="big">Kati Ren 2.1 </h2>
+2. discribe this class by writing the selector:
+ <title>style tests</title>
+  <style type="text/css">
+    h2{
+       font-size: 30px;
+       color: salmon;
+    }
+     .big{
+       font-size: 60px;
+    }
+  </style> 
+
+also combinable, f.ex. with uppercase, to make all letters capital
+     .uppercase{
+       text-transform: uppercase;
+    }
+also, if you want big & uppercase text to be color X, then this is done here to: 
+     .big.uppercase{
+       color: magenta;
+    }
+
+span element to make only a part of text different: (by default a blank)
+1.
+<h2 class="uppercase"><span>Kati</span> Ren 2.1 </h2>
+- nothing, because default blank
+2. in style
+   ...
+    }
+   span{
+     color:violet;
+    }
+  </style> 
+
+if only span in h1 should be violet, then:
+ }
+   h1 span{
+     color:violet;
+    }
+  </style> 
+
+
+
+(not needed next, just demo)
+<body> 
+  <span>Span element</span>
+
+
+have CSS and html seperatly!
+1. save all in the stye (not style brakets themselves!) in CSS
+2. create a link element in html site instead of the style stuff under title
+<link rel="stylesheet" type="text/css" href="">
+3. input absolute (http...web) or relative url (ordner pc) into href
+<link rel="stylesheet" type="text/css" href="css/test.css">
+
+body background color: 
+body{
+  background-color: lightblue;
+  }
+
+<h1> Kati Ren 2 </h1>
+<h1> Kati Ren 3 </h1>
+<h2> Kati Ren 2.1 </h2>
+<h2> Kati Ren 2.2 </h2>
+<h2> Kati Ren 2.3 </h2>
+</body>
+
+
+
+for the case that if pic cannot load or for blind people reading programs, use... 
+<img src="image path.gif" alt="description of the picture">
+...as a part of the pic <>
+
+
+Background pic: in html 
+<style>
+body {
+   background-image: url("img/visualElements/bgDiamondDeerGreen.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+}
+</style>
+
+
+determine size of pic:
+<img ...title"   width="500" height="600">   other stuff follows after it (like link...)
+
+
+writing a comment (that is invisible for the browser)
+<!--    ....   -->
+
+ordered list: list with numbers on the left side
+<ol>
+  <li> ...list items ... </li>
+  <li> ...               </li>
+  <li> ...               </li>
+</ol>
+
+link in list items: & unordered list  (no numbers, but dots )
+<ul> 
+   <li><a href="link">Pac-Man</a></li>
+   ...
+</ul>
+
+footer element for the bottom text on a page:
+<footer> ... </footer>
+
+copyright symbol:
+&copy; Kati Ren 
+
+tab icon: (favicon)
+   <link rel="icon" href="img/favicon.png">
+
+
+what makes the gap to the sides? (in css)
+body{
+  margin: 0;  (this is 0, so no gap)
+
+put text & image into center: 
+ header{
+   text-align: center;
+ }
+
+image - getting some rounded corners: 
+  header img{
+    border-radius: 150px;
+  }
+
+image to circle: add 
+  width:300px; 
+to the stuff before
+
+add border to image: (width, style, colour)
+ header img{
+    ...
+    border: 10px solid #97D0CC;   (shadow colour)   (#93CCCA better)
+  }
+(could get square again, 
+so increase the border radious to match the quare add up 
+(visible in browser F12)
+
+for space between the sides of the screen (& inside header box f.ex.):
+padding:   (into header)
+padding-top: 50px;
+padding-bottom: 50px;
+
+change font-family: 
+(supply multiple ones in case the previous one does not work on others' devices
+
+font-family: 'Helvetica', 'Arial', sans-serif;
+
+web font for cool ones: search in google fonts  (font.google.com)
+you can copy the link of the one you chose (in embed, not download) 
+and copy it into the index.html
+then add the css specifies (just from below)
+
+add for specifically selected text parts:
+h1, h3{
+  font-family: 'Spectral SC', serif;
+}
+before the css file
+italic font:
+  <i>Art Gallery</i> 
+
+set max widht in case for a super wide screen: (easier reading)
+main{
+  max-width: 800px;
+}
+
+image sizes change: (with only the width, the hight stays proportionately)
+main img{
+  max-width: 100%;
+}
+
+change borders:
+  margin: 0 auto; 
+(first is top and bottom, next is left and right)
+
+padding for when size changes to keep borders:
+  padding: 0 20px;   (top, right, left, top)
+
+change line hight for readability:
+  line-height: 30px;
+
+stype links: (in css)
+a{
+color ...
+}
+
+hovering (sooner? class):  as you hover over a link it changes colour: 
+a:hover{
+  color: .. ;
+  background-color ... ;
+  }
+
+transparency effect when hovering over an image:  
+img:hover {
+  opacity: 0.5;
+}
+this doesn't work
+footer a:hover{
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+
+
+transparent box:   makes text transparent as well though, not solved yet
+h1{
+  background-color: white;
+  opacity: 0.5;
+}
+
+if effect only on scecific element of a (f.ex.):
+  footer a:hover{
+     ....
+  }
+
+make a caption:  (text that looks smaller under pics) 
+<p class="caption">I am a caption</p>      (in html)
+ p.caption{
+   color: #A7734C;
+   font-size: 18px;
+   margin-top: 0;
+ }                       (in css: important: place under footers usw., but before  p2)
+
+
+comment in css:
+/*this doesnt work*/
+
+
+making a gallary in html: 
+<table>
+   <tr>   (table row)
+      <th> I am a table heading </th>
+   </tr>
+   <tr>  
+      <td> I am a table data. Use me for a general description </td>
+   </tr>
+   <tr>  
+      <td> <img scr="Img/art/1.jpg"> </td>    (here:4 collums in the table)
+      <td> <img scr="Img/art/2.jpg"> </td>
+      <td> <img scr="Img/art/3.jpg"> </td>
+      <td> <img scr="Img/art/4.jpg"> </td>
+   </tr>
+   <tr>  
+      <td> <img scr="Img/art/5.jpg"> </td>
+      <td> <img scr="Img/art/6.jpg"> </td>
+      <td> <img scr="Img/art/7.jpg"> </td>
+      <td> <img scr="Img/art/8.jpg"> </td>
+   </tr>
+</table>
+
+add diffr. size for pictures and style headline:
+in style tag on top of html (but i guess css would work too)
+<style>
+   img{
+      width:80px;
+      height:40px;
+   }
+   th{
+      font-size: ..;
+      background-color:..;
+   }
+</style>
+
+make te headline go across all the gallary pics:   (with colspan (colum span))
+in tr  (careful about the closing > of <th>!)
+   <tr>   (table row)
+      <th colspan="4" > I am a table heading </th>
+   </tr>    
+whis could also fix the table layout (if dragged appart)
+
+more extras for look of table in style: 
+<style>
+   table{
+      background-color:..;
+      width: 60%;   (this might pull pictures farther apart)
+   }
+</style>
+
+space between pics top to bottom: 
+<style>
+   td{
+      padding: 25px;
+   }
+</style>
+
+same for headline:
+<style>
+   th{
+      padding: 25px;
+   }
+</style>
+
+table in center of page: 
+in html: 
+<table align="center">
+   .....
+</table>
+
+make pics clickable and enlarge in new tab: 
+go into image in html: 
+between <td> and image <> write link: 
+ <td>  <a href="Img/art/8.jpg" target="_blank">  <img scr="Img/art/8.jpg">  </a>  </td>  
+ (cut out little </a> tag you get and put it behind image tag) 
+maybe possible with multiple pictures?
