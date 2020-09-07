@@ -336,8 +336,9 @@ opacity: 0.5;
   }
 }
 
+/*
 @media (max-width: 700px) {
-/*  .navbar ul {
+  .navbar ul {
     padding: 0 10px;
   }
   .navbar ul li a {
@@ -364,6 +365,15 @@ opacity: 0.5;
     #container {
       width: 90%;
     }
+
+  /*  body {
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }*/
 
     .profilePic{
      text-align: center;
