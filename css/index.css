@@ -121,6 +121,34 @@ margin-top: 18px;
   margin-bottom: 40px;
 }
 
+/* specials page css start*/
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  border-radius: 7px;
+  border: 5px solid #A7734C;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.specialsDetails {
+  width: 100%;
+  max-width: 100%;
+  height:auto;
+  font-size: 15px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+/* specials page css end*/
 
 
 main section1 img{
@@ -132,7 +160,7 @@ main section1 img{
   }
 
 
-  main section2 h3{  /*heading art gallary*/
+  main section2 h3{  /*not used right now I think*/
     font-family: 'Spectral SC', serif, sans-serif;
     text-align: center;
     font-size: 50px;
@@ -277,11 +305,49 @@ p.caption{
   margin-top: 0;
 }
 
-/*this one is also ok ( only 66% approved, but js is better and it works)
-html {
-  scroll-behavior: smooth;
+
+/* linktree start ,  ...7 all for linktree  */
+.container7 header {   /*narrower white transpa on linktree page*/
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 70px;
 }
-*/
+
+.container7 h3{  /*heading Kati Ren on linktree page*/
+  font-family: 'Spectral SC', serif, sans-serif;
+  text-align: center;
+  font-size: 42px;
+/* text-shadow: 2px 0 #E2B18D, -2px 0 #E2B18D, 0 2px #E2B18D, 0 -2px #E2B18D, 1px 1px #A56E44, -1px -1px #A56E44, -1px 1px #A56E44, 1px -1px #A56E44; */
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.button {
+  background-color: #B3DBCE;
+  color: #A56E44;
+  border: 2px solid #A56E44;
+  border-radius: 20px;
+  width: 70%;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-family: 'Spectral SC', serif, sans-serif;
+  font-weight: bold;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #A56E44;
+  text-decoration: none;
+  border: 1px solid #B3DBCE;
+  color: white;
+}
+/* linktree end */
+
+
+
 
 #back-to-top-btn {
   display: none;
